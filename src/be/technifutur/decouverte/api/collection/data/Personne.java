@@ -11,12 +11,14 @@ public class Personne/* implements Comparable<Personne>*/{
     private LocalDate naissance;
     private int taille;
 
+
     public Personne(String name, String prenom, LocalDate naissance, int taille) {
         this.name = Objects.requireNonNull(name);
         this.prenom = Objects.requireNonNull(prenom);
         this.naissance = Objects.requireNonNull(naissance);
         this.taille = taille;
     }
+
 
     public String getName() {
         return name;
